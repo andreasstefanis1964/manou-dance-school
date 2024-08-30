@@ -1693,7 +1693,7 @@ strong {
   height: 2.5vw;
   border-radius: 50%;
   overflow: hidden;
-  background: #ac65dc;
+  background: #a13a92;
   transition: all 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 @media (max-width: 991px) {
