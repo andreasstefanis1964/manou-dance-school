@@ -75,7 +75,7 @@
       "underlineLink": false,
       "text": "By continuing you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>."
     },
-    "uniqCompNum": 5,
+    "uniqCompNum": 7,
     "versionPublish": "5.9.11",
     "screenshot": "screenshot.png",
     "mcSmartCart": {
@@ -763,6 +763,177 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_name": "slider02",
+          "_sourceTheme": "preschoolm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider02 mbr-embla\" group=\"Gallery & Slider\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"embla\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" name=\"showMainTitle\" title=\"Title\" checked>\n        <input type=\"checkbox\" name=\"showMainSubtitle\" title=\"Subtitle\">\n        <input type=\"checkbox\" name=\"showMainText\" title=\"Text\">\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\">\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked>\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\">\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\">\n        <input type=\"color\" title=\"Color\" name=\"arrowsColor\" value=\"#ff0066\" condition=\"arrows || arrowsMobile\">\n        <header>Cards</header>\n        <input type=\"checkbox\" name=\"showTitle\" title=\"Title\">\n        <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n        <input type=\"range\" name=\"slidesAmount\" title=\"Amount\" min=\"1\" max=\"12\" step=\"1\" value=\"4\">\n        <input type=\"range\" name=\"gap\" title=\"Gap\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"color\" name=\"cardColor\" title=\"Color\" value=\"#ffffff\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/preschoolm5/components/_images/bg/4-bg.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/preschoolm5/components/_images/bg/1-bg.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row title-section justify-content-between\" mbr-if=\"showMainTitle || showMainText || showMainSubtitle\">\n            <div class=\"col-12 col-lg-6\">\n                <h2 class=\"main-sect mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".main-sect.mbr-section-title\" data-app-placeholder=\"Type Text\" mbr-if=\"showMainTitle\"><b>Πιστοποιήσεις:</b></h2>\n            </div>\n            <div class=\"col-12 col-lg-5\">\n                <h3 class=\"main-sect mbr-section-subtitle mbr-fonts-style mt-3\" mbr-theme-style=\"display-5\" data-app-selector=\".main-sect.mbr-section-subtitle\" data-app-placeholder=\"Type Text\" mbr-if=\"showMainSubtitle\">\n                    <b>Arcu vitae tristique</b>\n                </h3>\n                <p class=\"main-sect mbr-text mbr-fonts-style mt-3\" mbr-theme-style=\"display-5\" data-app-selector=\".main-sect.mbr-text\" data-app-placeholder=\"Type Text\" mbr-if=\"showMainText\">\n                    Pellentesque iaculis faucibus.\n                </p>\n            </div>\n        </div>\n    </div>\n    <div class=\"position-relative\">\n        <div class=\"embla mt-4\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\" data-contain-scroll=\"trimSnaps\">\n            <div class=\"embla__viewport\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n                <div class=\"embla__container\" mbr-list mbr-list-grow=\"slidesAmount\">\n                    <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"card\">\n                                <div class=\"card-body\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/registered_rad_teacher_manou_vasia_4eck-400x389.png\" alt=\"Mobirise\" class=\"card-img-top mb-4\">\n                                    <h3 class=\"card-title mbr-section-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" data-app-placeholder=\"Type Text\" mbr-if=\"showTitle\">\n                                        <b>Marcelia Priston</b>\n                                    </h3>\n                                    <p class=\"card-text mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\" mbr-if=\"showSubtitle\">\n                                        Art Teacher\n                                    </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    \n                    \n                <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"card\">\n                                <div class=\"card-body\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/silver-swans-licensee-286x286.png\" alt=\"Mobirise\" class=\"card-img-top mb-4\">\n                                    <h3 class=\"card-title mbr-section-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" data-app-placeholder=\"Type Text\" mbr-if=\"showTitle\">\n                                        <b>Marcelia Priston</b>\n                                    </h3>\n                                    <p class=\"card-text mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\" mbr-if=\"showSubtitle\">\n                                        Art Teacher\n                                    </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div><div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"card\">\n                                <div class=\"card-body\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/vaganova-113x144.png\" alt=\"Mobirise\" class=\"card-img-top mb-4\">\n                                    <h3 class=\"card-title mbr-section-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" data-app-placeholder=\"Type Text\" mbr-if=\"showTitle\">\n                                        <b>Marcelia Priston</b>\n                                    </h3>\n                                    <p class=\"card-text mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\" mbr-if=\"showSubtitle\">\n                                        Art Teacher\n                                    </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div><div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"slide-content\">\n                            <div class=\"card\">\n                                <div class=\"card-body\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/download-225x225.png\" alt=\"Mobirise\" class=\"card-img-top mb-4\">\n                                    <h3 class=\"card-title mbr-section-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" data-app-placeholder=\"Type Text\" mbr-if=\"showTitle\">\n                                        <b>Marcelia Priston</b>\n                                    </h3>\n                                    <p class=\"card-text mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\" mbr-if=\"showSubtitle\">\n                                        Art Teacher\n                                    </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div></div>\n            </div>\n            <div class=\"buttons-container\">\n                <button class=\"embla__button embla__button--prev\">\n                    <span class=\"mbr-iconfont mbrib-left\" aria-hidden=\"true\"></span>\n                    <span class=\"sr-only visually-hidden\">Previous</span>\n                </button>\n                <button class=\"embla__button embla__button--next\">\n                    <span class=\"mbr-iconfont mbrib-right\" aria-hidden=\"true\"></span>\n                    <span class=\"sr-only visually-hidden\">Next</span>\n                </button>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".title-section": {
+              "margin-bottom": "4.25rem",
+              "padding": "0 90px",
+              "@media (max-width: 992px)": {
+                "padding": "0 20px",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".card": {
+              "height": "auto",
+              "margin": "0",
+              "width": "100%",
+              "background-color": "@cardColor",
+              "& .card-body": {
+                "padding": "42px 20px",
+                "width": "100%"
+              },
+              "& .card-img-top": {
+                "margin": "0 auto",
+                "width": "200px",
+                "height": "200px",
+                "border-radius": "50%",
+                "object-fit": "cover"
+              }
+            },
+            ".buttons-container": {
+              "margin": "40px auto 0px auto",
+              "width": "80px",
+              "display": "flex",
+              "justify-content": "space-between",
+              "& when not (@arrows)": {
+                "display": "none"
+              },
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  "display": "none"
+                }
+              },
+              "& button": {
+                "display": "flex",
+                "justify-content": "center",
+                "align-items": "center",
+                "background-color": "@arrowsColor",
+                "border-radius": "50%",
+                "width": "36px",
+                "height": "36px",
+                "transition": "all 0.7s ease",
+                "&:hover": {
+                  "background-color": "lighten(@arrowsColor, 20%)"
+                },
+                "& span": {
+                  "line-height": "2px",
+                  "color": "white"
+                }
+              }
+            },
+            ".embla__button": {
+              "& when not (@arrows)": {
+                "display": "none"
+              },
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  "display": "none"
+                }
+              },
+              "&:disabled": {
+                "cursor": "default"
+              },
+              "&:hover": {
+                "cursor": "pointer"
+              }
+            },
+            ".embla__slide": {
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "min-width": "340px",
+              "max-width": "340px",
+              "@media (max-width: 768px)": {
+                "min-width": "300px",
+                "max-width": "300px"
+              },
+              "min-height": "380px"
+            },
+            ".embla": {
+              "position": "relative",
+              "width": "100%"
+            },
+            ".embla__viewport": {
+              "overflow": "hidden",
+              "width": "100%"
+            },
+            ".embla__viewport.is-draggable": {
+              "cursor": "grab"
+            },
+            ".embla__viewport.is-dragging": {
+              "cursor": "grabbing"
+            },
+            ".embla__container": {
+              "display": "flex",
+              "user-select": "none",
+              "-webkit-touch-callout": "none",
+              "-khtml-user-select": "none",
+              "-webkit-tap-highlight-color": "transparent",
+              "@media (max-width: 768px)": {
+                "margin-left": "1.3rem",
+                "margin-right": "1.3rem",
+                "& .embla__slide:first-child": {
+                  "margin-left": "2rem !important"
+                },
+                "& .embla__slide:last-child": {
+                  "margin-right": "2rem !important"
+                }
+              }
+            },
+            ".slide-content": {
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            },
+            ".main-sect.mbr-section-subtitle": {
+              "text-align": "left"
+            },
+            ".main-sect.mbr-text": {
+              "text-align": "left"
+            },
+            ".main-sect.mbr-section-title": {
+              "text-align": "left",
+              "color": "#a13a92"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_cid": "umYeLs9IEG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "slider02-6"
         },
         {
           "alias": false,
