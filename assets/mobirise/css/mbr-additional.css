@@ -1117,9 +1117,9 @@ strong {
   transition: all 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .cid-tw2H5YkFPg .navbar-nav .nav-link:hover {
-  background-color: #a073ec;
+  background-color: #a13a92;
   color: #f5c9f4 !important;
-  box-shadow: 2px 0 0 #a073ec, 0 1px 0 #a073ec, -2px 0 0 #a073ec, 0 -1px 0 #a073ec;
+  box-shadow: 2px 0 0 #a13a92, 0 1px 0 #a13a92, -2px 0 0 #a13a92, 0 -1px 0 #a13a92;
 }
 @media (min-width: 992px) {
   .cid-tw2H5YkFPg .mbr-section-btn {
@@ -1188,7 +1188,7 @@ strong {
   }
   .cid-tw2H5YkFPg .navbar-nav .nav-item .nav-link:hover {
     background-color: transparent;
-    color: #a073ec !important;
+    color: #a13a92 !important;
     box-shadow: none;
   }
   .cid-tw2H5YkFPg .mbr-section-btn {
