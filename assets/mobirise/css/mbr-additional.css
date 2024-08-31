@@ -2351,11 +2351,64 @@ strong {
   color: #FFFFFF;
   z-index: 1;
 }
+.cid-umY5uhxnKy {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #ffffff;
+}
+.cid-umY5uhxnKy .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-umY5uhxnKy .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .cid-umY5uhxnKy .mbr-section-head {
+    text-align: center;
+  }
+}
+.cid-umY5uhxnKy .google-map {
+  height: 35rem;
+  position: relative;
+}
+.cid-umY5uhxnKy .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+.cid-umY5uhxnKy .google-map [data-state-details] {
+  color: #6b6763;
+  height: 1.5em;
+  margin-top: -0.75em;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.cid-umY5uhxnKy .google-map[data-state] {
+  background: #e9e5dc;
+}
+.cid-umY5uhxnKy .google-map[data-state="loading"] [data-state-details] {
+  display: none;
+}
+.cid-umY5uhxnKy .mbr-section-title {
+  color: #a13a92;
+}
+.cid-umY5uhxnKy .mbr-section-subtitle {
+  color: #a13a92;
+}
 .cid-tw2M3wltcq {
   padding-top: 5rem;
   padding-bottom: 5rem;
   position: relative;
-  background-color: #2a1340;
+  background-color: #a13a92;
 }
 .cid-tw2M3wltcq:before {
   content: "";
@@ -2602,59 +2655,6 @@ strong {
 .cid-tw2M3wltcq form .form-check-input:checked {
   border-color: #FFFFFF !important;
   background-color: transparent !important;
-}
-.cid-umY5uhxnKy {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background: #ffffff;
-}
-.cid-umY5uhxnKy .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-umY5uhxnKy .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (max-width: 767px) {
-  .cid-umY5uhxnKy .mbr-section-head {
-    text-align: center;
-  }
-}
-.cid-umY5uhxnKy .google-map {
-  height: 35rem;
-  position: relative;
-}
-.cid-umY5uhxnKy .google-map iframe {
-  height: 100%;
-  width: 100%;
-}
-.cid-umY5uhxnKy .google-map [data-state-details] {
-  color: #6b6763;
-  height: 1.5em;
-  margin-top: -0.75em;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-}
-.cid-umY5uhxnKy .google-map[data-state] {
-  background: #e9e5dc;
-}
-.cid-umY5uhxnKy .google-map[data-state="loading"] [data-state-details] {
-  display: none;
-}
-.cid-umY5uhxnKy .mbr-section-title {
-  color: #a13a92;
-}
-.cid-umY5uhxnKy .mbr-section-subtitle {
-  color: #a13a92;
 }
 .cid-tw2M49UFYE {
   padding-top: 30px;
