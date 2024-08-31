@@ -1802,6 +1802,136 @@ strong {
   position: relative;
   z-index: 11;
 }
+.cid-un19LeWGaT {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  background-color: #1f1d1a;
+}
+.cid-un19LeWGaT .row {
+  justify-content: center;
+}
+.cid-un19LeWGaT .col-title {
+  margin-bottom: 2.5rem;
+}
+.cid-un19LeWGaT .mbr-section-title {
+  color: #F6B7D2;
+}
+.cid-un19LeWGaT .mbr-section-subtitle {
+  color: #FEF9EE;
+  margin-top: 1.5rem;
+}
+.cid-un19LeWGaT .cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+@media (max-width: 991px) {
+  .cid-un19LeWGaT .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 639px) {
+  .cid-un19LeWGaT .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.cid-un19LeWGaT .card {
+  display: flex;
+  width: 100%;
+  border-radius: 0.75rem;
+  min-height: 400px;
+}
+@media (max-width: 639px) {
+  .cid-un19LeWGaT .card {
+    min-height: 276px;
+  }
+}
+.cid-un19LeWGaT .card-1 {
+  background-color: #44af69;
+}
+.cid-un19LeWGaT .card-2 {
+  background-color: #75083a;
+}
+.cid-un19LeWGaT .card-3 {
+  background-color: #ff4545;
+}
+.cid-un19LeWGaT .card-4 {
+  background-color: #fed243;
+}
+.cid-un19LeWGaT .card-5 {
+  background-color: #44af69;
+}
+.cid-un19LeWGaT .card-6 {
+  background-color: #ff7f11;
+}
+.cid-un19LeWGaT .card:hover .card-img-bg img {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.cid-un19LeWGaT .card:hover .card-title {
+  text-decoration: underline;
+}
+.cid-un19LeWGaT .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+.cid-un19LeWGaT .card-img-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.75rem;
+  border-top-right-radius: 100px;
+  overflow: hidden;
+}
+.cid-un19LeWGaT .card-img-bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  transition: .3s;
+}
+.cid-un19LeWGaT .card-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  padding: 96px 16px 24px;
+  position: relative;
+  z-index: 5;
+}
+.cid-un19LeWGaT .card-box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(to bottom, transparent, #000000);
+  mix-blend-mode: multiply;
+  transform: matrix(1, 0, 0, 1, 0, 1);
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.cid-un19LeWGaT .card-title {
+  width: 100%;
+  margin-bottom: 0;
+  color: #FCF0D5;
+  position: relative;
+  z-index: 11;
+}
+.cid-un19LeWGaT .card-text {
+  width: 100%;
+  color: #FCF0D5;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 11;
+}
 .cid-tw2LU4nJZV {
   padding-top: 0rem;
   padding-bottom: 0rem;
