@@ -5149,6 +5149,127 @@ strong {
 .cid-un1Oyj0DYi p {
   line-height: 1.2;
 }
+.cid-un2BpIzT8e {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-un2BpIzT8e .container-fluid {
+  padding: 0 3rem;
+}
+.cid-un2BpIzT8e .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-un2BpIzT8e .scroll {
+  overflow-x: auto;
+  padding: 0;
+}
+.cid-un2BpIzT8e .table-wrapper {
+  margin: 0 auto;
+}
+.cid-un2BpIzT8e .head-item {
+  min-width: 70px;
+}
+.cid-un2BpIzT8e table {
+  width: 100% !important;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.cid-un2BpIzT8e table th {
+  padding: 1.5rem 1rem;
+  transition: all 0.2s;
+  text-align: center;
+  background-color: #a13a92;
+  color: white;
+  vertical-align: middle;
+}
+.cid-un2BpIzT8e table td {
+  padding: 1.2rem 1.6rem;
+  vertical-align: middle;
+}
+.cid-un2BpIzT8e table.table {
+  background: #ffffff;
+}
+.cid-un2BpIzT8e .dataTables_filter {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+.cid-un2BpIzT8e .dataTables_filter label {
+  display: inline;
+  white-space: normal !important;
+}
+.cid-un2BpIzT8e .dataTables_filter input {
+  display: inline;
+  width: auto;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  padding-left: 1rem;
+}
+.cid-un2BpIzT8e .dataTables_info {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  white-space: normal !important;
+  text-align: left;
+  width: 100%;
+}
+.cid-un2BpIzT8e .dataTables_wrapper {
+  display: block;
+}
+.cid-un2BpIzT8e .dataTables_wrapper .search {
+  margin-bottom: 0.5rem;
+}
+.cid-un2BpIzT8e .dataTables_wrapper .table {
+  overflow-x: auto;
+}
+.cid-un2BpIzT8e .head-item:after,
+.cid-un2BpIzT8e .head-item:before {
+  bottom: 50% !important;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+@media (max-width: 992px) {
+  .cid-un2BpIzT8e .dataTables_filter {
+    text-align: center;
+  }
+  .cid-un2BpIzT8e .table-wrapper {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .cid-un2BpIzT8e .dataTables_filter {
+    text-align: center;
+  }
+  .cid-un2BpIzT8e .dataTables_filter input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .cid-un2BpIzT8e .table-wrapper {
+    width: 100% !important;
+  }
+  .cid-un2BpIzT8e .container-fluid {
+    padding: 0 1rem;
+  }
+  .cid-un2BpIzT8e table th,
+  .cid-un2BpIzT8e table td {
+    padding: 0.75rem;
+  }
+}
+.cid-un2BpIzT8e .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-un2BpIzT8e .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-un2BpIzT8e .mbr-section-title,
+.cid-un2BpIzT8e .underline {
+  color: #a13a92;
+}
 .cid-un1NabLxiw {
   padding-top: 5rem;
   padding-bottom: 5rem;
