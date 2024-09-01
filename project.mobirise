@@ -75,7 +75,7 @@
       "underlineLink": false,
       "text": "By continuing you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>."
     },
-    "uniqCompNum": 65,
+    "uniqCompNum": 68,
     "versionPublish": "5.9.11",
     "screenshot": "screenshot.png",
     "mcSmartCart": {
@@ -6064,145 +6064,160 @@
           "_anchor": "slider02-1n"
         },
         {
-          "alias": false,
+          "_name": "features04",
+          "_sourceTheme": "merchm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features04 merchm5\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <input type=\"checkbox\" title=\"Card Icon\" name=\"showIcon\" condition=\"showDesc\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#1D1D1F\" name=\"icon\" condition=\"showIcon\">\n        <input type=\"color\" title=\"Border Color\" value=\"#bbbbbb\" name=\"border\" condition=\"showDesc\">\n        <input type=\"color\" title=\"Card BG\" value=\"#F5F5F7\" name=\"card\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/merchm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#a13a92\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/merchm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\" mbr-if=\"showTitle || showText\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Προσχολικές τάξεις κλασσικού μπαλέτου</h2>\n                    <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                        This is designed to solve a wide range of problems and challenges in our increasingly digital\n                        and\n                        interconnected world.\n                    </p>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-7 item features-image\">\n                <div class=\"item-wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/bby-936x623.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-5 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"desc-wrapper\" mbr-if=\"showDesc\">\n                            <div class=\"desc-wrap\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-globe mobi-mbri\" mbr-if=\"showIcon\"></span>\n                                <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\">\n                                    Baby Class-Junior\n                                </p>\n                            </div>\n                        </div>\n                        <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showTitle\">Μουσικοκινητική αγωγή για παιδιά προσχολικής ηλικίας 3-4 ετών.\n                        </h4>\n                        <p class=\"item-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-text\" mbr-if=\"showText\">\n                            They allow users to find answers to questions, research topics, and gather data without the\n                            limitations of physical libraries or printed materials.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-5 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"desc-wrapper\" mbr-if=\"showDesc\">\n                            <div class=\"desc-wrap\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-globe mobi-mbri\" mbr-if=\"showIcon\"></span>\n                                <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\">\n                                    Pre Primary\n                                </p>\n                            </div>\n                        </div>\n                        <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showTitle\">Απευθύνεται σε παιδιά 4-6 ετών</h4>\n                        <p class=\"item-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-text\" mbr-if=\"showText\">\n                            They solve the problem of bridging geographical gaps, allowing individuals and businesses to\n                            connect, collaborate, and share information in real-time.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-7 item features-image\">\n                <div class=\"item-wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/junior-936x624.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
             "overflow": "hidden",
-            "background-color": "@bg-value",
-            ".row": {
-              "justify-content": "center"
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            ".col-title": {
-              "margin-bottom": "2.5rem"
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
-            ".mbr-section-title": {
-              "color": "#F6B7D2"
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
             },
-            ".mbr-section-subtitle": {
-              "color": "#FEF9EE",
-              "margin-top": "1.5rem"
-            },
-            ".cards-container": {
-              "display": "grid",
-              "grid-template-columns": "repeat(3, 1fr)",
-              "gap": "0.5rem",
-              "@media (max-width: 991px)": {
-                "grid-template-columns": "repeat(2, 1fr)"
-              },
-              "@media (max-width: 639px)": {
-                "grid-template-columns": "repeat(1, 1fr)"
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
               }
             },
-            ".card": {
-              "display": "flex",
-              "width": "100%",
-              "border-radius": "0.75rem",
-              "min-height": "(@cardHeight * 100px)",
-              "@media (max-width: 639px)": {
-                "min-height": "(@cardHeight * 69px)"
-              },
-              "&-1": {
-                "background-color": "@cardBg1"
-              },
-              "&-2": {
-                "background-color": "@cardBg2"
-              },
-              "&-3": {
-                "background-color": "@cardBg3"
-              },
-              "&-4": {
-                "background-color": "@cardBg4"
-              },
-              "&-5": {
-                "background-color": "@cardBg5"
-              },
-              "&-6": {
-                "background-color": "@cardBg6"
-              },
-              "&:hover": {
-                ".card-img-bg": {
-                  "img": {
-                    "transform": "scale3d(1.1, 1.1, 1.1)"
-                  }
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 60px",
+                "@media (max-width: 992px)": {
+                  "padding": "0 23px"
                 },
-                ".card-title": {
-                  "text-decoration": "underline"
+                "@media (max-width: 768px)": {
+                  "padding": "0 12px"
                 }
               }
             },
-            ".card-wrapper": {
-              "display": "flex",
-              "flex-direction": "column",
-              "justify-content": "flex-end",
-              "height": "100%",
-              "position": "relative"
-            },
-            ".card-img-bg": {
-              "position": "absolute",
-              "width": "100%",
-              "height": "100%",
-              "top": "0",
-              "left": "0",
-              "border-radius": "0.75rem",
-              "border-top-right-radius": "100px",
-              "overflow": "hidden",
-              "img": {
-                "object-fit": "cover",
-                "width": "100%",
-                "height": "100%",
-                "max-width": "100%",
-                "transition": ".3s"
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 23px"
+              },
+              "@media (max-width: 768px)": {
+                "padding": "0 12px"
               }
             },
-            ".card-box": {
+            ".row": {
+              "justify-content": "center"
+            },
+            ".title-wrapper": {
+              "margin-bottom": "100px",
+              "@media (max-width: 992px)": {
+                "margin-bottom": "56px"
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "22px"
+              },
+              ".mbr-text": {
+                "margin-bottom": "0"
+              }
+            },
+            ".item": {
               "display": "flex",
-              "flex-direction": "column",
-              "overflow": "hidden",
-              "width": "100%",
-              "padding": "96px 16px 24px",
-              "position": "relative",
-              "z-index": "5",
-              "@media (max-width: 991px)": {}
+              "align-items": "center",
+              "margin-bottom": "32px",
+              "@media (max-width: 992px)": {
+                "margin-bottom": "16px"
+              },
+              ".item-wrapper": {
+                "width": "100%",
+                ".item-img": {
+                  "img": {
+                    "height": "500px",
+                    "object-fit": "cover",
+                    "@media (max-width: 992px)": {
+                      "min-height": "auto",
+                      "height": "350px"
+                    }
+                  }
+                },
+                ".card-box": {
+                  ".desc-wrapper": {
+                    "margin-bottom": "16px",
+                    ".desc-wrap": {
+                      "padding": "8px 12px",
+                      "border": "1px solid @border",
+                      "display": "inline-flex",
+                      "align-items": "center",
+                      "justify-content": "center",
+                      "border-radius": "2rem",
+                      ".mbr-iconfont": {
+                        "font-size": "16px",
+                        "color": "@icon",
+                        "margin-right": "4px"
+                      },
+                      ".item-desc": {
+                        "margin-bottom": "0"
+                      }
+                    }
+                  },
+                  ".item-title": {
+                    "margin-bottom": "16px"
+                  },
+                  ".item-text": {
+                    "margin-bottom": "0"
+                  }
+                }
+              }
             },
-            ".card-box-overlay": {
-              "position": "absolute",
-              "top": "0",
-              "left": "0",
-              "width": "100%",
-              "height": "100%",
-              "z-index": "10",
-              "background": "linear-gradient(to bottom, transparent, #000000)",
-              "mix-blend-mode": "multiply",
-              "transform": "matrix(1, 0, 0, 1, 0, 1)",
-              "border-bottom-left-radius": "0.75rem",
-              "border-bottom-right-radius": "0.75rem"
+            ".item.features-without-image": {
+              ".item-wrapper": {
+                "padding": "48px",
+                "background-color": "@card",
+                "border-radius": "32px",
+                "display": "flex",
+                "align-items": "center",
+                "height": "100%",
+                "@media (max-width: 992px)": {
+                  "padding": "24px"
+                }
+              }
             },
-            ".card-title": {
-              "width": "100%",
-              "margin-bottom": "0",
-              "color": "#FCF0D5",
-              "position": "relative",
-              "z-index": "11"
+            ".item-menu-overlay": {
+              ".btn-wrapper": {
+                "margin-top": "0"
+              }
             },
-            ".card-text": {
-              "width": "100%",
-              "color": "#FCF0D5",
-              "margin-top": "0.25rem",
-              "margin-bottom": "0",
-              "position": "relative",
-              "z-index": "11"
+            ".mbr-section-title": {
+              "color": "#f5c9f4",
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".item-title": {
+              "color": "#1D1D1F"
+            },
+            ".item-desc": {
+              "color": "#1D1D1F"
+            },
+            ".item-text": {
+              "color": "#1D1D1F"
             }
           },
-          "_name": "agallery1",
-          "_sourceTheme": "cookm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"gallery1\" group=\"Gallery & Slider\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Height\" name=\"cardHeight\" min=\"1\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\">\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Card Bg 1\" name=\"cardBg1\" value=\"#562f69\">\n        <input type=\"color\" title=\"Card Bg 2\" name=\"cardBg2\" value=\"#562f69\">\n        <input type=\"color\" title=\"Card Bg 3\" name=\"cardBg3\" value=\"#562f69\">\n        <input type=\"color\" title=\"Card Bg 4\" name=\"cardBg4\" value=\"#562f69\">\n        <input type=\"color\" title=\"Card Bg 5\" name=\"cardBg5\" value=\"#562f69\">\n        <input type=\"color\" title=\"Card Bg 6\" name=\"cardBg6\" value=\"#562f69\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Color\" value=\"#562f69\" selected>\n        </fieldset>\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-title\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>Προσχολικές τάξεις κλασσικού μπαλέτου</b></h3>\n                <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Morbi blandit cursus risus at ultrices mi tempus imperdiet. A lacus vestibulum sed arcu.\n                </h5>\n            </div>\n        </div>\n        <div class=\"row card-row\">\n            <div class=\"col-12 cards-container\">\n                <div class=\"card card-1 item features-image\">\n                    <div class=\"card-wrapper item-wrapper\">\n                        <div class=\"card-img-bg item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/bby-936x623.jpg\" alt=\"Mobirise Website Builder\">\n                        </div>\n                        <div class=\"card-box\">\n                            <div class=\"card-box-overlay\"></div>\n                            <h5 class=\"card-title card-title-1 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".card-title-1\"><b>Baby Class-Junior</b></h5>\n                            <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                                Μουσικοκινητική αγωγή για παιδιά προσχολικής ηλικίας 3-4 ετών</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"card card-2 item features-image\">\n                    <div class=\"card-wrapper item-wrapper\">\n                        <div class=\"card-img-bg item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/junior-936x624.jpg\" alt=\"Mobirise Website Builder\">\n                        </div>\n                        <div class=\"card-box\">\n                            <div class=\"card-box-overlay\"></div>\n                            <h5 class=\"card-title card-title-1 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".card-title-1\"><b>Pre Primary</b></h5>\n                            <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Απευθύνεται σε παιδιά 4-6 ετών</p>\n                        </div>\n                    </div>\n                </div>\n                \n                \n                \n                \n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "un7a0ZkP0w",
-          "_anchor": "agallery1-1o",
+          "_cid": "un7IjT9pYb",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "features04-1v"
         },
         {
           "alias": false,
