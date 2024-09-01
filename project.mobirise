@@ -75,7 +75,7 @@
       "underlineLink": false,
       "text": "By continuing you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>."
     },
-    "uniqCompNum": 84,
+    "uniqCompNum": 87,
     "versionPublish": "5.9.11",
     "screenshot": "screenshot.png",
     "mcSmartCart": {
@@ -7650,6 +7650,255 @@
           "_anchor": "features05-2b",
           "_isUserblock": true,
           "_cid": "un8abgruqG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "features05",
+          "_sourceTheme": "offerm5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title align-left": {
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            },
+            ".mbr-text1": {
+              "background": "@card1",
+              "padding": "2rem",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "border-radius": "3rem",
+              "margin-bottom": "2rem",
+              "border-bottom-left-radius": "0",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              },
+              "color": "#ffffff"
+            },
+            ".mbr-text2": {
+              "background": "@card2",
+              "padding": "2rem",
+              "border-radius": "3rem",
+              "border-bottom-right-radius": "0",
+              "margin-right": "0",
+              "margin-bottom": "2rem",
+              "margin-left": "auto",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              }
+            },
+            ".mbr-text3": {
+              "background": "@card3",
+              "padding": "2rem",
+              "border-radius": "3rem",
+              "border-bottom-left-radius": "0",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              },
+              "color": "#232323"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"offerm5 features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\">\n    <mbr-parameters>\n\n\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Items\" name=\"item\" min=\"1\" max=\"3\" step=\"1\" value=\"3\">\n\n        <header>Color</header>\n        <input type=\"color\" title=\"Item 1\" name=\"card1\" value=\"#a13a92\" selected>\n        <input type=\"color\" title=\"Item 2\" name=\"card2\" value=\"#e67de3\" selected condition=\"item > 1\">\n        <input type=\"color\" title=\"Item 3\" name=\"card3\" value=\"#f5c9f4\" selected condition=\"item > 2\">\n\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fffaee\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"row\" mbr-class=\"{'justify-content-center' : alignContent == 2, 'justify-content-end' : alignContent == 3}\">\n            <div class=\"col-sm-12 col-md-10 col-lg-6\">\n                <h3 class=\"mbr-fonts-style mbr-section-title pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>\n                <p class=\"mbr-text align-left pb-5 mbr-fonts-style\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article>Vivamus accumsan tellus odio, a bibendum\n                    justo sodales vitae.</p>\n\n\n                <p class=\"mbr-text1 align-left mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text1\" data-multiline mbr-article>Έχουμε <b>μόνιμους</b> και <b>διπλωματούχους</b> καθηγητές που μας εξασφαλίζουν την ποιότητα των υπηρεσιών μας.<br></p>\n\n                <p class=\"mbr-text2 align-left mbr-fonts-style mbr-py-1\" mbr-if=\"item > 1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\" data-multiline=\"\" mbr-article=\"\">Παρέχουμε επαγγελματικές προοπτικές καθοδηγώντας τους μαθητές μας στην εισαγωγή τους στις <b>Ανώτερες Σχολές Χορού</b> μέσα από τις εξετάσεις τους στο υπουργείο πολιτισμού.<br></p>\n\n                <p class=\"mbr-text3 align-left mbr-fonts-style mbr-py-1\" mbr-if=\"item > 2\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\" data-multiline=\"\" mbr-article=\"\"><b>Καμαρώνουμε</b> για το Διδακτικό μας προσωπικό το οποίο προέρχεται μέσα από το φυτώριο της σχολής μας.<br></p>\n\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features05-2c",
+          "_isUserblock": true,
+          "_cid": "un8aWnxP0z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "features05",
+          "_sourceTheme": "offerm5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title align-left": {
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            },
+            ".mbr-text1": {
+              "background": "@card1",
+              "padding": "2rem",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "border-radius": "3rem",
+              "margin-bottom": "2rem",
+              "border-bottom-left-radius": "0",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              },
+              "color": "#ffffff"
+            },
+            ".mbr-text2": {
+              "background": "@card2",
+              "padding": "2rem",
+              "border-radius": "3rem",
+              "border-bottom-right-radius": "0",
+              "margin-right": "0",
+              "margin-bottom": "2rem",
+              "margin-left": "auto",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              }
+            },
+            ".mbr-text3": {
+              "background": "@card3",
+              "padding": "2rem",
+              "border-radius": "3rem",
+              "border-bottom-left-radius": "0",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              },
+              "color": "#232323"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"offerm5 features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\">\n    <mbr-parameters>\n\n\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Items\" name=\"item\" min=\"1\" max=\"3\" step=\"1\" value=\"3\">\n\n        <header>Color</header>\n        <input type=\"color\" title=\"Item 1\" name=\"card1\" value=\"#a13a92\" selected>\n        <input type=\"color\" title=\"Item 2\" name=\"card2\" value=\"#e67de3\" selected condition=\"item > 1\">\n        <input type=\"color\" title=\"Item 3\" name=\"card3\" value=\"#f5c9f4\" selected condition=\"item > 2\">\n\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fffaee\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"row\" mbr-class=\"{'justify-content-center' : alignContent == 2, 'justify-content-end' : alignContent == 3}\">\n            <div class=\"col-sm-12 col-md-10 col-lg-6\">\n                <h3 class=\"mbr-fonts-style mbr-section-title pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>\n                <p class=\"mbr-text align-left pb-5 mbr-fonts-style\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article>Vivamus accumsan tellus odio, a bibendum\n                    justo sodales vitae.</p>\n\n\n                <p class=\"mbr-text1 align-left mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text1\" data-multiline mbr-article>Παρέχουμε <b>Σεμινάρια</b> με <b>διάσημους guest teachers</b> συνοδεία πιάνου.<br></p>\n\n                <p class=\"mbr-text2 align-left mbr-fonts-style mbr-py-1\" mbr-if=\"item > 1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\" data-multiline=\"\" mbr-article=\"\"><b>Παρακολούθηση</b> και <b>συμμετοχή</b> σε χορευτικές αλλά και θεατρικές παραστάσεις.<br></p>\n\n                <p class=\"mbr-text3 align-left mbr-fonts-style mbr-py-1\" mbr-if=\"item > 2\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\" data-multiline=\"\" mbr-article=\"\"><b>Μύηση</b> σε όλα σχεδόν τα διαφορετικά είδη χορευτικής έκφρασης πέραν του κλασικού χορού.<br></p>\n\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features05-2d",
+          "_isUserblock": true,
+          "_cid": "un8aX6vJJr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "features05",
+          "_sourceTheme": "offerm5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title align-left": {
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            },
+            ".mbr-text1": {
+              "background": "@card1",
+              "padding": "2rem",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "border-radius": "3rem",
+              "margin-bottom": "2rem",
+              "border-bottom-left-radius": "0",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              },
+              "color": "#ffffff"
+            },
+            ".mbr-text2": {
+              "background": "@card2",
+              "padding": "2rem",
+              "border-radius": "3rem",
+              "border-bottom-right-radius": "0",
+              "margin-right": "0",
+              "margin-bottom": "2rem",
+              "margin-left": "auto",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              }
+            },
+            ".mbr-text3": {
+              "background": "@card3",
+              "padding": "2rem",
+              "border-radius": "3rem",
+              "border-bottom-left-radius": "0",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "@media (min-width: 767px)": {
+                "max-width": "80%"
+              },
+              "color": "#232323"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"offerm5 features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\">\n    <mbr-parameters>\n\n\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected=\"\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Items\" name=\"item\" min=\"1\" max=\"3\" step=\"1\" value=\"3\">\n\n        <header>Color</header>\n        <input type=\"color\" title=\"Item 1\" name=\"card1\" value=\"#a13a92\" selected=\"\">\n        <input type=\"color\" title=\"Item 2\" name=\"card2\" value=\"#e67de3\" selected=\"\" condition=\"item > 1\">\n        <input type=\"color\" title=\"Item 3\" name=\"card3\" value=\"#f5c9f4\" selected=\"\" condition=\"item > 2\">\n\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fffaee\" selected=\"\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"row\" mbr-class=\"{'justify-content-center' : alignContent == 2, 'justify-content-end' : alignContent == 3}\">\n            <div class=\"col-sm-12 col-md-10 col-lg-6\">\n                <h3 class=\"mbr-fonts-style mbr-section-title pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>\n                <p class=\"mbr-text align-left pb-5 mbr-fonts-style\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline=\"\" mbr-article=\"\">Vivamus accumsan tellus odio, a bibendum\n                    justo sodales vitae.</p>\n\n\n                <p class=\"mbr-text1 align-left mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text1\" data-multiline=\"\" mbr-article=\"\">Παρέχουμε <b>οικογενειακό</b> περιβάλλον και πρωτίστως <b>εμπιστοσύνη</b>.&nbsp;<br></p>\n\n                <p class=\"mbr-text2 align-left mbr-fonts-style mbr-py-1\" mbr-if=\"item > 1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\" data-multiline=\"\" mbr-article=\"\">Παρέχουμε <b>ασφάλεια</b> εφαρμόζοντας όλα τα απαραίτητα μέτρα για την λειτουργία μας με άδεια      και επίβλεψη του Υπουργείου Πολιτισμού.<br></p>\n\n                <p class=\"mbr-text3 align-left mbr-fonts-style mbr-py-1\" mbr-if=\"item > 2\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\" data-multiline=\"\" mbr-article=\"\"><b>Ξύλινο ειδικό πάτωμα </b>για αποφυγή τραυματισμών<br></p>\n\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features05-2e",
+          "_isUserblock": true,
+          "_cid": "un8aXJkCrz",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
